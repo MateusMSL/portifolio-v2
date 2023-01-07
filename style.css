@@ -1,0 +1,331 @@
+
+/* BACKGROUND GRADIENTE E WAVES*/
+body{    
+    background: #916bbf;
+    height: auto;
+}
+
+#background{
+    padding-top: 30px;
+    height: 700px;
+    background: linear-gradient(0deg, #916bbf 44%, rgba(28,12,91,1) 80%);
+}
+
+#wave_bottom{
+
+    float: left;
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(img/waves/wave-haikei.svg);
+    height: 211px;
+    
+}
+/* BACKGROUND GRADIENTE E WAVES*/
+
+
+
+
+
+/* Apresentação */
+
+    #welcome{
+        
+        margin-left: 30px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 500;
+        height: 40px;
+        
+    }
+
+    #nome{
+        margin-left: 30px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 200;
+        height: 40px;
+        }
+
+/* Apresentação */
+
+
+
+
+
+
+
+
+
+/* Competencias */
+#part_02{
+
+    float: left;
+    height: 80px;
+    display: flex;
+    align-items: left;
+}
+
+.wrapper{
+    float: left;
+    display: inline-flex;
+}
+.wrapper .texto-base{
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 30px;
+    float: left;
+    font-weight: 500;
+}
+.wrapper .texto-secundario{
+    margin-top: 10px;
+    height: 42px;
+    float: left;
+    line-height: 50px;
+    overflow: hidden; 
+    
+    
+}
+
+.texto-secundario li{
+    
+    list-style: none;
+    font-size: 37px;
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    animation: slide 7s steps(7) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+
+.texto-secundario li span{
+    position: relative;
+}
+
+.texto-secundario li span::after{
+    
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1c0c5b;
+    border-left: 2px solid rgb(255, 255, 255);
+    animation: typing 1s steps(11) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 20px;
+    }
+}
+
+#Conhecimento_01{color: rgb(255, 119, 0);}
+#Conhecimento_02{color: rgb(114, 196, 255);}
+#Conhecimento_03{color: rgb(255, 223, 40);}
+#Conhecimento_04{color: rgb(255, 255, 255);}
+#Conhecimento_05{color: rgb(51, 127, 189);}
+#Conhecimento_06{color: rgb(239, 207, 138);}
+#Conhecimento_07{color: rgb(255, 144, 251);}
+/* Competencias */
+
+
+
+
+
+
+/* Informação */
+
+#part_03{
+    
+    float: left;
+    height: 529px;
+    margin-top: 10px;
+
+}
+    #informativo{
+        color: #fff;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+/* Informação */
+
+
+/* Botoões */
+
+#part_04{
+
+    height: 208px;
+    float: left;
+    margin-top: 65px;
+    padding: 45px;
+
+}
+
+#btn_sobremim{ float: left;}
+#btn_projetos{ float: right;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 319px) {
+    *{
+      display: none;
+    }
+
+    
+        
+}
+
+@media (min-width: 320px) and (max-width: 428px) {
+
+
+    #background{
+
+        background: linear-gradient(0deg, #916bbf 4%, rgba(28,12,91,1) 50%);
+
+
+    }
+    #welcome{
+        margin-top: 10px;
+        margin-left: 10px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 500;
+        height: 40px;
+        text-align: center;
+        
+    }
+
+    #nome{
+        margin-top: 40px;
+        margin-left: 10px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 200;
+        height: 60px;
+        text-align: center;
+        }
+
+
+    .wrapper .texto-base{
+        margin-top: 30px;
+        margin-left: 5px;
+        color: #fff;
+        font-size: 25px;
+        float: left;
+        font-weight: 500;
+        text-align: center;
+    }
+    .wrapper .texto-secundario{
+        
+        margin-top: 30px;
+        margin-left: 50px;
+        height: 44px;
+        float: left;
+        line-height: 50px;
+        overflow: hidden;
+        text-align: center;
+        
+        
+    }
+
+    .wrapper{
+
+        display: block;
+
+    }
+
+    #part_03{
+        float: left;
+        height: 258px;
+        margin-top: 180px;
+    
+    }
+        #informativo{
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            margin-left: 0px;
+        }
+
+        #part_04{
+
+            float: left;
+            margin-top: 65px;
+            padding: 0px;
+        
+        }
+        
+        #btn_sobremim{ float: left; margin-left: 10px;}
+        #btn_projetos{ float: right; margin-right: 10px}
+
+        #wave_bottom{
+
+            float: none;
+            background-position: bottom;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url(img/waves/wave-haikei.svg);
+            height: 211px;
+            margin-top: 690px;
+            
+        }
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: Font_01;
+    src: url(fonts/Fluff.ttf);
+    }
+    
+    ::selection {
+    color: rgb(85, 85, 85);
+    background: rgb(255, 255, 255);
+    }
+    
+    
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: #ffffff;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: rgb(223, 183, 255);
+    border-radius: 20px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: rgb(164, 54, 207);
+    }
